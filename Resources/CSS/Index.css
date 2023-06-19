@@ -22,6 +22,7 @@ nav{
     border-bottom: 1px solid seashell;
     position: fixed;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: black;
@@ -52,6 +53,20 @@ nav li {
     margin: 0 12px;
 }
 
+@media screen and (max-width: 501px) {
+    nav li {
+        font-size: 14px;
+        margin: 0 3px;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    nav img {
+        margin-left: 10px;
+        height: 30px;
+    }
+}
+
 #mission {
     margin: auto;
     background-image: url("../Images/img-mission-background.jpeg");
@@ -61,7 +76,10 @@ nav li {
     flex-basis: 1200px;
     height: 700px;
     align-items: center;
-    margin-bottom: 100px;
+}
+
+a {
+    color: seashell;
 }
 
 h2 {
@@ -91,6 +109,7 @@ h4{
 #teaofmonth{
     max-width: 1000px;
     margin: auto;
+    padding-top: 90px;
     text-align: center;
 }
 
@@ -121,9 +140,13 @@ figcaption {
     margin-top: 10px;;
 }
 
+#locationfix {
+    height: 80px;
+}
+
 #locations {
     text-align: center;
-    margin: 60px auto 0;
+    margin: auto;
     flex-basis: 1200px;
     height: 570px;
     width: 100%;
